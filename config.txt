@@ -1,0 +1,22 @@
+# tomcat context.xml changes
+<Resource name="jdbc/postgres"
+      global="jdbc/postgres"
+      auth="Container"
+      type="javax.sql.DataSource"
+      driverClassName="org.postgresql.Driver"
+      url="jdbc:postgresql://mydbinstance.cxvdg4hmqe94.us-east-2.rds.amazonaws.com:5432/med_9f6e16dbe7fd4ae28558f9313021e131"
+      username="postgres"
+      password="postgres"
+      maxTotal="50"
+      maxIdle="20"
+      minIdle="5"
+      maxWaitMillis="1000"/>
+
+# tomcat server.xml changes
+
+<Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true"
+              maxThreads="150" scheme="https" secure="true"
+              keystoreFile="/root/.keystore" keystorePass="password"
+              clientAuth="false" sslProtocol="TLS" />
+
+# create a keystore for ssl

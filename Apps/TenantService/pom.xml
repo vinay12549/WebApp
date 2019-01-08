@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>Apps</artifactId>
+		<groupId>com.medblaze</groupId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+
+	<artifactId>TenantService</artifactId>
+	<packaging>war</packaging>
+
+	<name>TenantService</name>
+	<url>http://www.example.com</url>
+
+	<properties>
+
+	</properties>
+
+	<dependencyManagement>
+
+        <dependencies>
+
+        </dependencies>
+
+    </dependencyManagement>
+	
+	<dependencies>
+
+		<!-- apps common -->
+		<dependency>
+			<artifactId>AppsCommon</artifactId>
+			<groupId>com.medblaze</groupId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+
+    </dependencies>
+	
+	<build>
+
+        <pluginManagement>
+
+            <plugins>
+            
+            </plugins>
+
+        </pluginManagement>
+
+        <plugins>
+            
+        </plugins>
+
+    </build>
+
+</project>
